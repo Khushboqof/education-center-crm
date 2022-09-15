@@ -82,5 +82,10 @@ namespace EducationCenter.Desktop
         {
 
         }
+
+        private void rdHome_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

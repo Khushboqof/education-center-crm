@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:EducationCenter.Desktop"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="home"
     Title="MainWindow"
@@ -61,33 +62,33 @@
                             x:Name="rdHome"
                             Margin="0,30,0,0"
                             Click="rdHome_Click"
-                            Content="Home"
+                            Content="Students"
                             Style="{DynamicResource MenuRadioButtonStyle}"
-                            Tag="{DynamicResource home}" />
+                            Tag="{DynamicResource home}" Checked="rdHome_Checked" />
                         <RadioButton
                             x:Name="rdAnalytics"
                             Margin="0,1,0,1"
                             Click="rdAnalytics_Click"
-                            Content="Analytics"
+                            Content="Teachers"
                             Style="{DynamicResource MenuRadioButtonStyle}"
                             Tag="{DynamicResource analytics}" />
                         <RadioButton
                             x:Name="rdMessages"
                             Click="rdMessages_Click"
-                            Content="Messages"
+                            Content="Employees"
                             Style="{DynamicResource MenuRadioButtonStyle}"
                             Tag="{DynamicResource messages}" />
                         <RadioButton
                             x:Name="rdCollections"
                             Margin="0,1,0,1"
                             Click="rdCollections_Click"
-                            Content="Collections"
+                            Content="Courses"
                             Style="{DynamicResource MenuRadioButtonStyle}"
                             Tag="{DynamicResource collections}" />
                         <RadioButton
                             x:Name="rdUsers"
                             Click="rdUsers_Click"
-                            Content="Users"
+                            Content="Groups"
                             Style="{DynamicResource MenuRadioButtonStyle}"
                             Tag="{DynamicResource users}" />
 
