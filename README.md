@@ -1,4 +1,5 @@
 # education-center
+https://myoctocat.com/assets/images/base-octocat.svg
 
 function test() {
   console.log("notice the blank line before this function?");
@@ -7,4 +8,4 @@ function test() {
 ````
 Look! You can see my backticks.
 ````
-!(https://myoctocat.com/assets/images/base-octocat.svg)
+
