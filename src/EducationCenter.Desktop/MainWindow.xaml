@@ -64,7 +64,7 @@
                             Click="rdHome_Click"
                             Content="Students"
                             Style="{DynamicResource MenuRadioButtonStyle}"
-                            Tag="{DynamicResource home}" Checked="rdHome_Checked" />
+                            Tag="{DynamicResource users}" Checked="rdHome_Checked" />
                         <RadioButton
                             x:Name="rdAnalytics"
                             Margin="0,1,0,1"
@@ -92,6 +92,7 @@
                             Style="{DynamicResource MenuRadioButtonStyle}"
                             Tag="{DynamicResource users}" />
 
+                    
                         <Separator Margin="20,20" Background="{DynamicResource TertiaryBackgroundColor}" />
 
                         <RadioButton
@@ -193,7 +194,7 @@
 
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="60" />
+                    <RowDefinition Height="90" />
                     <RowDefinition />
                 </Grid.RowDefinitions>
                 <!--  Start: Button Close | Restore | Minimize  -->
@@ -226,13 +227,16 @@
                                 </Style.Triggers>
                             </Style>
                         </Button.Style>
+                        
                     </Button>
+                    
                     <Button
                         x:Name="btnMinimize"
                         Click="btnMinimize_Click"
                         Content="{DynamicResource minimize}"
                         Style="{DynamicResource IconButtonsStyle}" />
                 </StackPanel>
+                
                 <!--  End: Button Close | Restore | Minimize  -->
 
                 <!--  Start: Frame Container  -->
@@ -242,7 +246,7 @@
                     CornerRadius="0 0 5 0">
                     <Frame
                         x:Name="frameContent"
-                        Margin="10"
+                        Margin="0"
                         Navigated="frameContent_Navigated"
                         NavigationUIVisibility="Hidden" />
                 </Border>

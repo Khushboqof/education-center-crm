@@ -14,9 +14,9 @@ namespace EducationCenter.Service.Services
     {
         private readonly EmployeeRepository employeeRepository;
 
-        public EmployeeService(EmployeeRepository employeeRepository)
+        public EmployeeService()
         {
-            this.employeeRepository = employeeRepository;
+            this.employeeRepository = new EmployeeRepository();
         }
 
         public async Task<Employee> CreateAsync(EmployeeForCreationDto employeetDto)

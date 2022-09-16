@@ -39,7 +39,6 @@ namespace EducationCenter.Desktop
             Close();
         }
 
-        //sdfghjkdxfghjkdfghjk
         private void btnRestore_Click(object sender, RoutedEventArgs e)
         {
             if (WindowState == WindowState.Normal)
@@ -87,5 +86,7 @@ namespace EducationCenter.Desktop
         {
 
         }
+
+       
     }
 }

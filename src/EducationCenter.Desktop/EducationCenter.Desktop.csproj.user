@@ -22,6 +22,12 @@
     <Compile Update="Pages\Teachers.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\CourseCreateWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\CourseUpdateWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Assets\Icons\Icons.xaml">
@@ -55,6 +61,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\LightTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\CourseCreateWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\CourseUpdateWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

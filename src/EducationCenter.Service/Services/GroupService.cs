@@ -15,9 +15,9 @@ namespace EducationCenter.Service.Services
 
         private readonly GroupRepository groupRepository;
 
-        public GroupService(GroupRepository groupRepository)
+        public GroupService()
         {
-            this.groupRepository = groupRepository;
+            this.groupRepository = new GroupRepository();
         }
 
         public async Task<Group> CreateAsync(GroupForCreationDto groupDto)

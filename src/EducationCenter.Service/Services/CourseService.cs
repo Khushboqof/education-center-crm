@@ -1,4 +1,5 @@
 ﻿using EducationCenter.Data.IRepositories;
+using EducationCenter.Data.Repositories;
 using EducationCenter.Domain.Entities.Courses;
 using EducationCenter.Domain.Enums;
 using EducationCenter.Service.DTOs.Courses;
@@ -16,9 +17,9 @@ namespace EducationCenter.Service.Services
 
         private readonly ICourseRepository courseRepository;
 
-        public CourseService(ICourseRepository courseRepository)
+        public CourseService()
         {
-            this.courseRepository = courseRepository;
+            this.courseRepository = new CourseRepository();
         }
 
 
