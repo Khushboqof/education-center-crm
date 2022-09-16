@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using TestEducationCenterUoW.Data.IRepositories;
+using TestEducationCenterUoW.Data.Repositories;
 using TestEducationCenterUoW.Service.DTOs.Students;
 using TestEducationCenterUoW.Service.Interfaces;
 namespace TestEducationCenterUoW.Service.Services
@@ -14,9 +15,9 @@ namespace TestEducationCenterUoW.Service.Services
     {
         private readonly IStudentRepository studentRepository;
 
-        public StudentService(IStudentRepository studentRepository)
+        public StudentService()
         {
-            this.studentRepository = studentRepository;
+            this.studentRepository = new StudentRepository();
         }
 
         public async Task<Student> CreateAsync(StudentForCreationDto studentDto)

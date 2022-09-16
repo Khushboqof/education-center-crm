@@ -60,6 +60,6 @@ namespace TestEducationCenterUoW.Data.Repositories
         }
 
         public Task SaveAsync()
-           => dbContext.SaveChangesAsync();
+            => dbContext.SaveChangesAsync();
     }
 }

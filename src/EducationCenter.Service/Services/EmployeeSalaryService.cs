@@ -14,9 +14,9 @@ namespace EducationCenter.Service.Services
     {
         private readonly EmployeeSalaryRepository employeeSalaryRepository;
 
-        public EmployeeSalaryService(EmployeeSalaryRepository employeeSalaryRepository)
+        public EmployeeSalaryService()
         {
-            this.employeeSalaryRepository = employeeSalaryRepository;
+            this.employeeSalaryRepository = new EmployeeSalaryRepository();
         }
 
         public async Task<EmployeeSalary> CreateAsync(EmployeeSalaryForCreationDto employeeSalaryDto)
