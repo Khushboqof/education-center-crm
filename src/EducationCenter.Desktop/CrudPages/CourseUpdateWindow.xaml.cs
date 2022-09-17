@@ -1,35 +1,21 @@
-﻿using EducationCenter.Domain.Entities.Courses;
-using EducationCenter.Service.DTOs.Courses;
-using EducationCenter.Service.Interfaces;
+﻿using EducationCenter.Service.Interfaces;
 using EducationCenter.Service.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace EducationCenter.Desktop.Windows
 {
     /// <summary>
-    /// Interaction logic for CourseCreateWindow.xaml
+    /// Interaction logic for CourseUpdateWindow.xaml
     /// </summary>
-    public partial class CourseCreatePage : Page
+    public partial class CourseUpdateWindow : Page
     {
         ICourseService courseService;
 
-        public CourseCreatePage()
+        public CourseUpdateWindow()
         {
             courseService = new CourseService();
-
             InitializeComponent();
         }
 
@@ -39,7 +25,5 @@ namespace EducationCenter.Desktop.Windows
 
             e.Handled = regex.IsMatch(e.Text);
         }
-
-
     }
 }

@@ -1,7 +1,5 @@
 ﻿using EducationCenter.Domain.Commons;
 using EducationCenter.Domain.Entities.Courses;
-using EducationCenter.Domain.Enums;
-using System;
 using System.Collections.Generic;
 
 namespace EducationCenter.Domain.Entities.Teachers

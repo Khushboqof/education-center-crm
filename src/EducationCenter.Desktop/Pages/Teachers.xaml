@@ -9,16 +9,48 @@
     Title="Teachers"
     d:DesignHeight="450"
     d:DesignWidth="800"
+    Loaded="Page_Loaded"
     FontFamily="Poppins"
     mc:Ignorable="d">
 
-    <Border Background="{DynamicResource SecundaryBackgroundColor}" CornerRadius="8">
-        <Label
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Content="Teachers"
-            FontSize="50"
-            FontWeight="Bold"
-            Foreground="{DynamicResource PrimaryTextColor}" />
+    <Border CornerRadius="8">
+        <Grid>
+            <DataGrid
+                x:Name="dtGrid"
+                AutoGenerateColumns="False"
+                IsReadOnly="True"
+                SelectionChanged="dtGrid_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Id}" Header="Id" />
+                    <DataGridTextColumn Binding="{Binding FirstName}" Header="Firstname"/>
+                    <DataGridTextColumn Binding="{Binding LastName}" Header="Lastname"/>
+                    <DataGridTextColumn Binding="{Binding Email}" Header="Email"/>
+                    <DataGridTextColumn Binding="{Binding PhoneNumber}" Header="Phone" />
+
+
+                    <DataGridTemplateColumn Header="Actions">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <DockPanel>
+                                    <Button Click="DeleteBtn" Style="{StaticResource deleteButton}" />
+                                    <Button x:Name="UpdateTeacherBtn" Click="UpdateBtn" Style="{StaticResource editButton}" />
+                                </DockPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button
+                x:Name="CreateTeacherBtn"
+                Width="80"
+                Height="32"
+                Margin="3"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Click="CreateCourseBtn_Click">
+                <ContentControl Content="Create" />
+            </Button>
+            <Frame x:Name="MainFrame" Margin="40" />
+        </Grid>
     </Border>
 </Page>

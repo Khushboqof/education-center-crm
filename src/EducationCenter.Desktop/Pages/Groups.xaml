@@ -16,7 +16,7 @@
         <Label
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Content="Groups"
+            Content="Payments"
             FontSize="50"
             FontWeight="Bold"
             Foreground="{DynamicResource PrimaryTextColor}" />

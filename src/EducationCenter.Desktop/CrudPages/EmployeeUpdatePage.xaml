@@ -1,0 +1,44 @@
+﻿<Page x:Class="EducationCenter.Desktop.CrudPages.EmployeeUpdatePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EducationCenter.Desktop.CrudPages"
+      mc:Ignorable="d" 
+      Width="500"
+      Height="400"
+      Title="EmployeeUpdatePage">
+
+    <Page.Resources>
+        <Style BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}" TargetType="TextBox">
+            <Setter Property="Margin" Value="10" />
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Border
+            Background="AliceBlue"
+            CornerRadius="20"
+            Cursor="Arrow">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBox x:Name="EmplyeeId" materialDesign:HintAssist.Hint="Id" />
+                <TextBox x:Name="EmployeeName" materialDesign:HintAssist.Hint="Firstname" />
+                <TextBox x:Name="EmployeeLast" materialDesign:HintAssist.Hint="Lastname" />
+                <TextBox x:Name="EmployeeEmail" materialDesign:HintAssist.Hint="Email" />
+                <TextBox x:Name="EmployeePhone" materialDesign:HintAssist.Hint="Phone" />
+                <TextBox x:Name="EmployeePosition" materialDesign:HintAssist.Hint="Position" />
+
+                <DockPanel>
+                    <Button Width="140" Margin="5" x:Name="UpdateEmployeeButton">
+
+                        Update
+                    </Button>
+
+                    <Button Width="140" Margin="5" x:Name="CancelButton">
+                        Cancel
+                    </Button>
+                </DockPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

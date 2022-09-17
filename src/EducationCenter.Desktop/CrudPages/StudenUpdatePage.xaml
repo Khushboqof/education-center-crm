@@ -1,0 +1,43 @@
+﻿<Page x:Class="EducationCenter.Desktop.CrudPages.StudenUpdatePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EducationCenter.Desktop.CrudPages"
+      mc:Ignorable="d" 
+      Width="500"
+      Height="350"
+      Title="StudenUpdatePage">
+
+    <Page.Resources>
+        <Style BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}" TargetType="TextBox">
+            <Setter Property="Margin" Value="10" />
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Border
+            Background="AliceBlue"
+            CornerRadius="20"
+            Cursor="Arrow">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBox x:Name="studentId" materialDesign:HintAssist.Hint="Id" />
+                <TextBox x:Name="StudentName" materialDesign:HintAssist.Hint="Firstname" />
+                <TextBox x:Name="StudentLast" materialDesign:HintAssist.Hint="Lastname" />
+
+                <TextBox x:Name="Phone" materialDesign:HintAssist.Hint="Phone" />
+                <TextBox x:Name="CourseId" materialDesign:HintAssist.Hint="CourseId" />
+
+                <DockPanel>
+                    <Button Width="140" Margin="5" x:Name="UpdateStudentButton">
+
+                        Update
+                    </Button>
+
+                    <Button Width="140" Margin="5" x:Name="CancelButton">
+                        Cancel
+                    </Button>
+                </DockPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
