@@ -1,18 +1,6 @@
 ﻿using EducationCenter.Desktop.Pages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace EducationCenter.Desktop
 {
@@ -28,10 +16,10 @@ namespace EducationCenter.Desktop
 
         private void Themes_Click(object sender, RoutedEventArgs e)
         {
-        //    if (Themes.IsChecked == true)
-        //        //ThemesController.SetTheme(ThemesController.ThemeTypes.Dark);
-        //    else
-        //        //ThemesController.SetTheme(ThemesController.ThemeTypes.Light);
+            //    if (Themes.IsChecked == true)
+            //        //ThemesController.SetTheme(ThemesController.ThemeTypes.Dark);
+            //    else
+            //        //ThemesController.SetTheme(ThemesController.ThemeTypes.Light);
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
@@ -79,6 +67,17 @@ namespace EducationCenter.Desktop
 
         private void frameContent_Navigated(object sender, NavigationEventArgs e)
         {
+
+        }
+
+        private void rdHome_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AboutUs_Click(object sender, RoutedEventArgs e)
+        {
+            frameContent.Navigate(new AboutUs());
 
         }
     }

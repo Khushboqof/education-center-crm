@@ -9,10 +9,24 @@
 
   <ItemGroup>
     <None Remove="Assets\Icons\logo.png" />
+    <None Remove="Assets\Images\e0e217ad29a2887c28b3732eeef3ee98.jpg" />
+    <None Remove="Assets\Images\n7ETmgDrpBGhBkD6Zj7Wf7cHITx2rmRrwmGmsZ4ANcnD4K8N6233606338569685258.jpg" />
+    <None Remove="Assets\Images\Portland-Public-Schools-McDaniel-High-Rebuild-Exterior-Entry-Opsis-Architecture-1200x800.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EducationCenter.Service\EducationCenter.Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Assets\Icons\logo.png" />
+    <Resource Include="Assets\Images\e0e217ad29a2887c28b3732eeef3ee98.jpg" />
+    <Resource Include="Assets\Images\n7ETmgDrpBGhBkD6Zj7Wf7cHITx2rmRrwmGmsZ4ANcnD4K8N6233606338569685258.jpg" />
+    <Resource Include="Assets\Images\Portland-Public-Schools-McDaniel-High-Rebuild-Exterior-Entry-Opsis-Architecture-1200x800.jpg" />
   </ItemGroup>
 
 </Project>

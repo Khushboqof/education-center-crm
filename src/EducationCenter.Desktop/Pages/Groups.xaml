@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:EducationCenter.Desktop.Pages"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="Groups"
     d:DesignHeight="450"
@@ -15,7 +16,7 @@
         <Label
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Content="Groups"
+            Content="Payments"
             FontSize="50"
             FontWeight="Bold"
             Foreground="{DynamicResource PrimaryTextColor}" />

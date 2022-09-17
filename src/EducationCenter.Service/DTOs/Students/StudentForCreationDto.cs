@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace TestEducationCenterUoW.Service.DTOs.Students
 {
@@ -15,6 +14,6 @@ namespace TestEducationCenterUoW.Service.DTOs.Students
         public string Phone { get; set; }
 
         [Required]
-        public long GroupId { get; set; }
+        public long CourseId { get; set; }
     }
 }

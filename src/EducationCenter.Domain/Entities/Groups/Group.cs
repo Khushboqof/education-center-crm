@@ -2,8 +2,6 @@
 using EducationCenter.Domain.Entities.Courses;
 using EducationCenter.Domain.Entities.Students;
 using EducationCenter.Domain.Entities.Teachers;
-using EducationCenter.Domain.Enums;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 

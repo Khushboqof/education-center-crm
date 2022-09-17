@@ -1,0 +1,48 @@
+﻿<Page x:Class="EducationCenter.Desktop.CrudPages.TeacherCreatePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:EducationCenter.Desktop.CrudPages"
+      mc:Ignorable="d" 
+      Width="500"
+      Height="350"
+      Title="TeacherCreatePage">
+
+    <Page.Resources>
+        <Style BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}" TargetType="TextBox">
+            <Setter Property="Margin" Value="10" />
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Border
+            Margin="20"
+            Background="AliceBlue"
+            CornerRadius="20"
+            Cursor="Arrow">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                <TextBox x:Name="TeacherName" materialDesign:HintAssist.Hint="FirstName" />
+                <TextBox x:Name="TeacherLast" materialDesign:HintAssist.Hint="Lastname" />
+                <TextBox x:Name="TeacherEmail" materialDesign:HintAssist.Hint="Email" />
+                <TextBox x:Name="TeacherPhone" materialDesign:HintAssist.Hint="Phone" />
+                <DockPanel>
+                    <Button
+                        x:Name="CreateTeacherButton"
+                        Width="140"
+                        Margin="5">
+                        Save
+                    </Button>
+
+                    <Button
+                        x:Name="CancelButton"
+                        Width="140"
+                        Margin="5">
+                        Cancel
+                    </Button>
+                </DockPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
