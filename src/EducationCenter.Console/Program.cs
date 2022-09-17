@@ -1,6 +1,4 @@
-﻿
-using EducationCenter.Service.DTOs.Courses;
-using EducationCenter.Service.Interfaces;
+﻿using EducationCenter.Service.Interfaces;
 using EducationCenter.Service.Services;
 
 ICourseService courseService = new CourseService();
@@ -30,5 +28,5 @@ var res = await courseService.GetAllAsync(o => o.Id <= 3);
 
 foreach (var course in res)
 {
-    Console.WriteLine(course.Name );
+    Console.WriteLine(course.Name);
 }

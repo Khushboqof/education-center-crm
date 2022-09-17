@@ -51,7 +51,7 @@
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center"
                             HorizontalContentAlignment="Left"
-                            Content="Orizon"
+                            Content="Najot talim crm"
                             FontSize="24"
                             FontWeight="Bold"
                             Foreground="{DynamicResource SecundaryBlueColor}" />
@@ -59,36 +59,36 @@
 
                     <StackPanel Grid.Row="1">
                         <RadioButton
-                            x:Name="rdHome"
+                            x:Name="rdStudent"
                             Margin="0,30,0,0"
                             Click="rdHome_Click"
                             Content="Students"
                             Style="{DynamicResource MenuRadioButtonStyle}"
                             Tag="{DynamicResource users}" Checked="rdHome_Checked" />
                         <RadioButton
-                            x:Name="rdAnalytics"
+                            x:Name="rdTeacher"
                             Margin="0,1,0,1"
                             Click="rdAnalytics_Click"
                             Content="Teachers"
                             Style="{DynamicResource MenuRadioButtonStyle}"
                             Tag="{DynamicResource analytics}" />
                         <RadioButton
-                            x:Name="rdMessages"
+                            x:Name="rdEmployee"
                             Click="rdMessages_Click"
                             Content="Employees"
                             Style="{DynamicResource MenuRadioButtonStyle}"
                             Tag="{DynamicResource messages}" />
                         <RadioButton
-                            x:Name="rdCollections"
+                            x:Name="rdCourse"
                             Margin="0,1,0,1"
                             Click="rdCollections_Click"
                             Content="Courses"
                             Style="{DynamicResource MenuRadioButtonStyle}"
                             Tag="{DynamicResource collections}" />
                         <RadioButton
-                            x:Name="rdUsers"
+                            x:Name="rdPaymennt"
                             Click="rdUsers_Click"
-                            Content="Groups"
+                            Content="Payments"
                             Style="{DynamicResource MenuRadioButtonStyle}"
                             Tag="{DynamicResource users}" />
 
@@ -96,9 +96,10 @@
                         <Separator Margin="20,20" Background="{DynamicResource TertiaryBackgroundColor}" />
 
                         <RadioButton
-                            x:Name="rdNotifications"
+                            x:Name="AboutUs"
                             Margin="0,1,0,1"
-                            Content="Notifications"
+                            Content="About Us"
+                            Click="AboutUs_Click"
                             Style="{DynamicResource MenuRadioButtonStyle}"
                             Tag="{DynamicResource notifications}" />
                         <RadioButton
@@ -109,37 +110,7 @@
 
                     </StackPanel>
 
-                    <Border
-                        Grid.Row="2"
-                        Margin="20,0"
-                        Background="{DynamicResource SecundaryBlueColor}"
-                        CornerRadius="15">
-                        <Border.BitmapEffect>
-                            <DropShadowBitmapEffect
-                                Direction="0"
-                                ShadowDepth="1"
-                                Softness="0.8"
-                                Color="#5B8DEF" />
-                        </Border.BitmapEffect>
-                        <Grid Margin="20">
-                            <Label
-                                Margin="0,-12,0,0"
-                                Content="Discover Pro"
-                                FontSize="18"
-                                FontWeight="SemiBold"
-                                Foreground="{DynamicResource TertiaryWhiteColor}" />
-                            <Label
-                                Margin="0,18,0,0"
-                                Content="Get Unlimited Statistics And Data"
-                                FontSize="10"
-                                FontWeight="Regular"
-                                Foreground="{DynamicResource PrimaryWhiteColor}" />
-                            <Button
-                                Margin="0,50,0,0"
-                                Content="Upgrade"
-                                Style="{DynamicResource ProButtonStyle}" />
-                        </Grid>
-                    </Border>
+                    
 
                     <Path
                         Grid.Row="3"

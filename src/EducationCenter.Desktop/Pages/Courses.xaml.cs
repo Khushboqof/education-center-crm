@@ -3,22 +3,10 @@ using EducationCenter.Domain.Entities.Courses;
 using EducationCenter.Service.DTOs.Courses;
 using EducationCenter.Service.Interfaces;
 using EducationCenter.Service.Services;
-using MaterialDesignThemes.Wpf;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace EducationCenter.Desktop.Pages
 {
@@ -55,15 +43,15 @@ namespace EducationCenter.Desktop.Pages
                 var items = await courseService.GetAllAsync();
                 dtGrid.ItemsSource = items.ToList();
 
-                MessageBox.Show("Mahsulot ochirildi!", "Success!");
+                MessageBox.Show("Course ochirildi!", "Success!");
             }
             else
-                MessageBox.Show("Mahsulot ochirilmadi!", "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Course ochirilmadi!", "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private async void UpdateBtn(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void dtGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -123,7 +111,7 @@ namespace EducationCenter.Desktop.Pages
             dtGrid.Visibility = Visibility.Visible;
             CreateCourseBtn.Visibility = Visibility.Visible;
             courseCreatePage.Visibility = Visibility.Collapsed;
-            Page_Loaded(sender,e);
+            Page_Loaded(sender, e);
         }
 
         private async void UpdateButton_Click(object sender, RoutedEventArgs e)
@@ -133,7 +121,7 @@ namespace EducationCenter.Desktop.Pages
                 MessageBox.Show("Ma'lumotlarni to'liq kiriting!");
                 return;
             }
-             await courseService.UpdateAsync(long.Parse(courseUpdateWindow.CourseId.Text), new CourseForCreationDto
+            await courseService.UpdateAsync(long.Parse(courseUpdateWindow.CourseId.Text), new CourseForCreationDto
             {
                 Name = courseUpdateWindow.CourseName.Text,
                 Price = decimal.Parse(courseUpdateWindow.CoursePrice.Text),

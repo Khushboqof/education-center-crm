@@ -1,6 +1,4 @@
 ﻿using EducationCenter.Domain.Commons;
-using EducationCenter.Domain.Enums;
-using System;
 
 namespace EducationCenter.Domain.Entities.Students
 {
@@ -9,6 +7,6 @@ namespace EducationCenter.Domain.Entities.Students
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Phone { get; set; }
-        public long? GroupId { get; set; }
+        public long? CourseId { get; set; }
     }
 }

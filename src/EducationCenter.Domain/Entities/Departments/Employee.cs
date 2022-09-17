@@ -1,6 +1,4 @@
 ﻿using EducationCenter.Domain.Commons;
-using EducationCenter.Domain.Enums;
-using System;
 using System.Collections.Generic;
 
 namespace EducationCenter.Domain.Entities.Departments

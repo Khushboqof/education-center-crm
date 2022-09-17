@@ -1,12 +1,12 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
+using System;
 
 #nullable disable
 
 namespace EducationCenter.Data.Migrations
 {
-    public partial class FirstMigration : Migration
+    public partial class firstmig : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -23,7 +23,7 @@ namespace EducationCenter.Data.Migrations
                     Position = table.Column<string>(type: "text", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    UpdatedBy = table.Column<Guid>(type: "uuid", nullable: true),
+                    UpdatedBy = table.Column<long>(type: "bigint", nullable: true),
                     State = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
@@ -43,7 +43,7 @@ namespace EducationCenter.Data.Migrations
                     PhoneNumber = table.Column<string>(type: "text", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    UpdatedBy = table.Column<Guid>(type: "uuid", nullable: true),
+                    UpdatedBy = table.Column<long>(type: "bigint", nullable: true),
                     State = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
@@ -88,7 +88,7 @@ namespace EducationCenter.Data.Migrations
                     TeacherId = table.Column<long>(type: "bigint", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    UpdatedBy = table.Column<Guid>(type: "uuid", nullable: true),
+                    UpdatedBy = table.Column<long>(type: "bigint", nullable: true),
                     State = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
@@ -111,7 +111,7 @@ namespace EducationCenter.Data.Migrations
                     CourseId = table.Column<long>(type: "bigint", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    UpdatedBy = table.Column<Guid>(type: "uuid", nullable: true),
+                    UpdatedBy = table.Column<long>(type: "bigint", nullable: true),
                     State = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
@@ -138,10 +138,11 @@ namespace EducationCenter.Data.Migrations
                     FirstName = table.Column<string>(type: "text", nullable: true),
                     LastName = table.Column<string>(type: "text", nullable: true),
                     Phone = table.Column<string>(type: "text", nullable: true),
+                    CourseId = table.Column<long>(type: "bigint", nullable: true),
                     GroupId = table.Column<long>(type: "bigint", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    UpdatedBy = table.Column<Guid>(type: "uuid", nullable: true),
+                    UpdatedBy = table.Column<long>(type: "bigint", nullable: true),
                     State = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>

@@ -3,11 +3,11 @@
 namespace EducationCenter.Desktop.Pages
 {
     /// <summary>
-    /// Interaction logic for Groups.xaml
+    /// Interaction logic for AboutUs.xaml
     /// </summary>
-    public partial class Groups : Page
+    public partial class AboutUs : Page
     {
-        public Groups()
+        public AboutUs()
         {
             InitializeComponent();
         }
